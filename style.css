@@ -77,10 +77,11 @@ nav {
   display: flex;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 
 .hamburger-menu {
-  height: 65px;
+  height: 50px;
   aspect-ratio: 1/1;
   border: none;
   background-color: inherit;
@@ -137,7 +138,7 @@ nav {
 
 .mobile .close-menu {
   aspect-ratio: 1/1;
-  height: 65px;
+  height: 50px;
   position: absolute;
   top: 10px;
   left: 10px;
@@ -154,3 +155,93 @@ nav {
   text-decoration: none;
   cursor: pointer;
 }
+
+.mobile li a:hover {
+  color: rgb(47, 47, 47);
+}
+
+section {
+  height: 90vh;
+  background-color: red;
+  position: relative;
+}
+
+.heroIMG {
+  height: 100%;
+}
+
+.heroIMG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0,0,0,.7));
+  pointer-events: none; 
+}
+
+.heroIMG img {
+height: 100%;
+object-fit: cover;
+}
+
+.heroMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-size: 34px;
+}
+
+.explore {
+  position: absolute;
+  height: 50px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  padding: 20px;
+  /* animation: typing 2s infinite; */
+  overflow: hidden;
+  white-space: nowrap;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.explore p {
+  animation: typing 2s infinite alternate-reverse, steps(8);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.explore:hover {
+  background-color: black;
+  color: white;
+}
+
+@keyframes arrowBounce {
+  from  {
+    opacity: .5;
+  }
+  to {
+  }
+}
+
+@keyframes typing {
+  from  {
+    width: 0;
+  }
+}
+
