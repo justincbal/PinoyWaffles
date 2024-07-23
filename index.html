@@ -6,6 +6,7 @@
     <title>Pinoy Waffles | justincbal</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <script src="nav.js" defer></script>
   </head>
   <body>
     <nav>
@@ -17,10 +18,10 @@
         <div class="close-menu">
           <img src="/assets/images/close-menu.svg" alt="" />
         </div>
-        <li><a href="">ABOUT US</a></li>
-        <li><a href="">MENU</a></li>
-        <li><a href="">GALLERY</a></li>
-        <li><a href="">CONTACT</a></li>
+        <li><a class="link" href="#about">ABOUT US</a></li>
+        <li><a class="link" href="#menu">MENU</a></li>
+        <li><a class="link" href="">GALLERY</a></li>
+        <li><a class="link" href="">CONTACT</a></li>
       </ul>
     </nav>
 
@@ -28,9 +29,127 @@
       <section class="homepage">
       <div class="heroIMG"><img src="/assets/images/hero.jpg" alt=""></div>
       <h1 class="heroMessage">WELCOME TO PINOY WAFFLES</h1>
-      <button class="explore navAbout"><p>ABOUT US</p></button>
-    </section>
-      
+      <button class="explore navAbout"><a href="#about">ABOUT US</a></button>
+      </section>
+      <section class="about" id="about">
+        <div class="aboutHero">
+           <h1>ABOUT<br>US</h1>
+        </div>
+        <div class="aboutInfo">
+          <p class="infoText">
+            Welcome to our family-run eatery! We serve freshly made waffles with
+            unique fillings and a taste of traditional Filipino street food.
+            Every dish is crafted with love and care, bringing you an authentic
+            and memorable dining experience. Join our extended family and enjoy
+            our culinary heritage with us.
+          </p>
+
+          <button class="explore"><a href="#menu">MENU</a></button>
+        </div>
+      </section>
+      <section class="menu" id="menu">
+        <h1>MENU</h1>
+        <div class="menuList streetFood">
+          <h1>STREET FOOD</h1>
+          <div class="itemHeading">
+            <h2>WAFFLES</h2>
+            <p>1 FOR $2.50<br />3 FOR $5.50</p>
+          </div>
+          <ul>
+            <li>HOT DOG</li>
+            <li>HAM & CHEESE</li>
+            <li>CHEESE</li>
+            <li>CREAM CHEESE</li>
+            <li>BLUEBERRY</li>
+            <li>STRAWBERRY</li>
+            <li>APPLE CINNAMON</li>
+            <li>UBE</li>
+            <li>LEMON</li>
+            <li>CHOCOLATE</li>
+            <li>CARAMEL</li>
+            <li>CUSTARD</li>
+          </ul>
+
+          <div class="itemHeading">
+            <h2>SIOMAI</h2>
+            <p>7 FOR $5</p>
+          </div>
+
+          <div class="itemHeading">
+            <h2>FRIED SIOMAI</h2>
+            <p>6 FOR $5</p>
+          </div>
+
+          <div class="itemHeading">
+            <h2>SIOPAO</h2>
+            <p>$2.50 EACH</p>
+          </div>
+          <ul>
+            <li>PORK ASADO</li>
+            <li>PULLED PORK</li>
+          </ul>
+
+          <div class="itemHeading">
+            <h2>KWEK KWEK</h2>
+            <p>
+              1 STICK $3 <br />
+              2 STICK $5.50
+            </p>
+          </div>
+
+          <h2>LUMPIA</h2>
+          <ul>
+            <li>BEAN SPROUT $2.50 EACH</li>
+            <li>SHANGHAI 5 FOR $2.50</li>
+          </ul>
+
+          <div class="itemHeading">
+            <h2>TURON</h2>
+            <p>$1.75 EACH</p>
+          </div>
+        </div>
+
+        <div class="menuList">
+          <h1>DRINK & DESSERT</h1>
+          <div class="itemHeading">
+            <h2>HALO HALO</h2>
+            <p>$6</p>
+          </div>
+          <div class="itemHeading">
+            <h2>SAGO GULAMAN</h2>
+            <p>$3</p>
+          </div>
+          <div class="itemHeading">
+            <h2>PINEAPPLE CALAMANSI</h2>
+            <p>$3.25</p>
+          </div>
+          <div class="itemHeading">
+            <h2>ISKRAMBOL</h2>
+            <p>$3</p>
+          </div>
+          <div class="itemHeading">
+            <h2>TAHO</h2>
+            <p>$3 <i>WEEKENDS ONLY</i></p>
+          </div>
+          <div class="itemHeading">
+            <h2>LECHE FLAN</h2>
+            <p>$4</p>
+          </div>
+          <div class="itemHeading">
+            <h2>SOFT DRINKS</h2>
+            <p>$1.75</p>
+          </div>
+          <div class="itemHeading">
+            <h2>WATER</h2>
+            <p>$1</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="explore gallery"><p>GALLERY</p></button>
+          <button class="explore contact"><p>CONTACT US</p></button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
